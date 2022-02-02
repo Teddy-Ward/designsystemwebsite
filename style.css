@@ -67,7 +67,7 @@ h1 {
     font-weight: 900;
     font-size: 4rem;
     letter-spacing: 0.25rem;
-    /*margin-bottom: 4rem;
+    margin-bottom: 1rem;
     /* line-height: 0.3; */
 }
   
@@ -120,7 +120,7 @@ a {
     background: linear-gradient(to right, var(--brand-primary-color), var(--background-color));
     height: 0.5rem;
     position: relative;
-    bottom: 1em
+    bottom: 2rem;
 }
 .banner {
     display:inline-block;
@@ -143,15 +143,23 @@ nav {
     z-index: 1;
     transition: 200ms;
     opacity: 0.9;
+    padding-left: 0.5rem;
 }
 nav.sticky {
     position: -webkit-fixed;
     position: fixed;
     top: 10rem;
-    padding: 5px;
+
 }
 nav:hover {
     transform: translateX(5.5rem);
+}
+nav li:hover a{
+    background-color:  var(--brand-secondary-color);
+    width: 6rem;
+    padding-left: 0.5rem;
+    margin-left: -0.5rem;
+    color: var(--brand-primary-color);
 }
 
 /* Button Styles */
